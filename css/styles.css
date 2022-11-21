@@ -9,9 +9,45 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+main {
+    height: calc(100vh - 103px);
+    background-image: url(../img/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    background: linear-gradient( 90deg, rgb(7 7 7 / 50%) 0%, rgb(77 39 10 / 80%) 100% );
+}   
+
 .container {
     width: 85%;
     margin: 0 auto;
+}
+
+.btn {
+    cursor: pointer;
+    outline: 0;
+
+    transition: all 0.5s linear;
+}
+
+.main-button {
+    background-color: #532019;
+    color: white;
+    text-decoration: none;
+    padding: 22px 24px;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #8f4406;
 }
 
 .header-row {
@@ -32,6 +68,26 @@ body {
 
     margin-right: 15px;
 }
+
+.main-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 12rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-subtitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
 
 
 

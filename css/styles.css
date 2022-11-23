@@ -11,6 +11,7 @@ html {
 body {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -131,9 +132,6 @@ header {
     border-bottom: 1px solid #532019;
 }
 
-header .nav-item {
-}
-
 .main-container {
     height: 100%;
     display: flex;
@@ -186,6 +184,7 @@ header .nav-item {
     width: 300px;
     height: 300px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .gallery {
@@ -249,7 +248,6 @@ header .nav-item {
 footer {
     padding: 40px 0;
     border-top: 1px solid #532019;
-
 }
 
 footer a {
@@ -473,6 +471,95 @@ footer .nav-item {
     color: #532019a8;
     margin-top: 5px;
 }
+
+.locations-intro {
+    height: calc(100vh - 153px);
+    background-image: url(../img/bg-lctn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.locations-container {
+    height: 100%;
+}
+
+.locations-holder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.locations-title {
+    font-size: 2rem;
+    color: white;
+}
+
+.locations-block {
+    height: 125px;
+    background-color: rgba(245, 245, 220, 0.504);
+}
+
+.address-row {
+    display: flex;
+}
+
+.address-column {
+    width: 34%;
+    position: relative;
+}
+
+.address-image {
+    height: 700px;
+    width: 100%;
+}
+
+.address-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.address-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #532019;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-column:hover .address-content {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.address-info {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.wide {
+    width: 100%;
+    height: 400px;
+}
+
+.wide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
 
 
 

@@ -218,7 +218,6 @@ footer .nav-item {
     margin-top: 10px;
 }
 
-
 .footer-note {
     font-size: 0.8rem;
     color: #532019;
@@ -228,6 +227,128 @@ footer .nav-item {
 
 .footer-note p:last-child {
     margin-top: 10px;
+}
+
+.about {
+    height: calc(100vh - 103px);
+    background-image: url(../img/bg-abt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container {
+    height: 100%;
+}
+
+.about-holder {
+    width: 40%;
+    padding: 100px 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.about-desc {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.about-desc span {
+    font-size: 1.4rem;
+}
+
+.portfolio {
+    height: 100vh;
+    position: relative;
+}
+
+.portfolio-container {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 45px 0;    
+}
+
+.portfolio-title {
+    font-size: 4rem;
+    color: #532019;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-holder img {
+    object-fit: cover;
+}
+
+.portfolio-holder .left {
+    margin-right: 20px;
+}
+
+.left-up img,
+.right-down img {
+    width: 500px;
+    height: 250px;
+}
+
+.left-down,
+.right-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-down img,
+.right-up img {
+    width: 240px;
+    height: 250px;
+}
+
+.left-up,
+.right-up {
+    margin-bottom: 15px;
+}
+
+.staff {
+    height: 100vh;
+    background-color: #532019;
+    display: flex;
+    align-items: center;
+}
+
+.staff-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff-title {
+    font-size: 3rem;
+    color: white;
+}
+
+.staff-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.649);
+    margin-top: 20px;
+}
+
+.staff-image img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
 }
 
 

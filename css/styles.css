@@ -466,7 +466,7 @@ footer .nav-item {
 
 .menu-item {
     width: 250px;
-    height: 300px;
+    min-height: 300px;
     background-color: white;
     border: 1px solid #532019;
     text-align: center;

@@ -597,13 +597,13 @@ footer .nav-item {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
+    padding: 30px 0;
     color: #532019;
     font-size: 1.2rem;
 }
 
 .vacancy-list-item:not(:last-child) {
-    padding-bottom: 60px;
+    border-bottom: 1px solid #532019;
 }
 
 .list-item-desc {
@@ -633,9 +633,12 @@ footer .nav-item {
     margin-bottom: 60px;
 }
 
-.vacancy-form input {
+.vacancy-form input, 
+.vacancy-form select{
     display: block;
     padding: 10px;
+    width: 400px;
+    color: rgba(0, 0, 0, 0.481);
 }
 
 .vacancy-form p {
@@ -709,10 +712,11 @@ footer .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
 .comment-card:not(:last-child) {
-    margin-bottom: 30px;
+    border-bottom: 1px solid white;
 }
     
 .comment-avatar {

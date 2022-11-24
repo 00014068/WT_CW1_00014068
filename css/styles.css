@@ -35,6 +35,10 @@ main {
 .btn {
     cursor: pointer;
     outline: 0;
+    text-transform: uppercase;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
 
     transition: all 0.5s linear;
 }
@@ -42,17 +46,41 @@ main {
 .main-button {
     background-color: #532019;
     color: white;
-    text-decoration: none;
     padding: 22px 24px;
     font-size: 1rem;
     border-radius: 10px;
-    text-transform: uppercase;
-    display: block;
-    width: fit-content;
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: #532019;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #532019;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 34px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid white;
 }
 
 .btn:hover {
     background-color: #8f4406;
+}
+
+.outline-btn:hover {
+    background-color: #532019;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: white;
+    color: #532019;
 }
 
 .header-row {
@@ -536,7 +564,8 @@ footer .nav-item {
     align-items: center;
 }
 
-.address-column:hover .address-content {
+.address-column:hover 
+.address-content {
     visibility: visible;
     opacity: 0.9;
 }
@@ -556,8 +585,82 @@ footer .nav-item {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
+
+.vacancy-list {
+    padding: 40px 0;
+}
+
+.vacancy-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    color: #532019;
+    font-size: 1.2rem;
+}
+
+.vacancy-list-item:not(:last-child) {
+    padding-bottom: 60px;
+}
+
+.list-item-desc {
+    font-size: 0.8rem;
+    width: 30%;
+}
+
+.vacancy-container {
+    height: 100%;
+}
+
+.vacancy-form-holder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vacancy-form {
+    background-color: #532019;
+    padding: 60px 0;
+}
+
+.vacancy-form-title {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.vacancy-form input {
+    display: block;
+    padding: 10px;
+}
+
+.vacancy-form p {
+    display: block;
+}
+
+.form-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.form-category:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
